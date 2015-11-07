@@ -1,0 +1,118 @@
+.hero {
+  background: url('/img/hero-home.jpg');
+  padding-top: 11em;
+  height: 1000px;
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include row;
+  @include media($medium-screen-up) {
+    background-position: inherit; 
+  }
+}
+
+.hero h1 {
+  text-align: center;
+  color: $white;
+  @include rokkit-normal;
+  font-size: 6em;
+  @include media($medium-screen-up) {
+    font-size: em(160);
+  }
+  text-decoration: uppercase;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.story {
+  padding: 5em 0;
+  @include row;
+  background: url('/img/white_wall_hash.png');
+  color: $blue;
+}
+
+h2.top-centered {
+  @include roboto-light;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.story-carousel {
+  @include span-columns(8);
+  @include shift(2);
+  margin-top: 60px;
+}
+
+.story-carousel img {
+  border-radius: 8px;
+}
+
+.story-text {
+  @include span-columns(8);
+  @include shift(2);
+  p {
+    @include roboto-normal;
+  }
+  span {
+    color: $off-white;
+    font-size: 5em;
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 170px;
+    text-shadow: 3px 1px 0px black;
+    @include rokkit-normal;
+  }
+}
+
+.cortland-image,  .cortland-engagement {
+  @include span-columns(6);
+  height: 600px;
+  position: relative;
+}
+
+.cortland-image {
+  background: url('/img/cortland-young.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+.cortland-engagement {
+  background: url('/img/engagement.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include omega;
+}
+
+.where {
+  color: white;
+  @include row;
+  background-size: contain;
+  background: url('/img/sleepy-hollow-sign.jpeg');
+  background-position: center;
+  padding: 40px 0;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+.where h2, h3 {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.where h2 {
+  @include roboto-light;
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 400;  
+}
+
+.where h3 {
+  font-weight: 400;
+  font-size: 33px;
+}
+
+.things-to-do {
+  padding: 40px 0;
+}

@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500);
+@import url(https://fonts.googleapis.com/css?family=Rokkitt:400,700);
+
+$roboto: 'Roboto', helvetica-neue, helvetica, sans-serif;
+$rokkit: 'Rokkitt', serif;
+
+
+@mixin rokkit-normal {
+  font-weight: 400;
+  font-family: $rokkit;
+}
+
+@mixin rokkit-bold {
+  font-weight: 700;
+  font-family: $rokkit;
+}
+
+
+@mixin roboto-thin {
+  font-family: $roboto;
+  font-weight: 100;
+}
+
+@mixin roboto-light {
+  font-family: $roboto;
+  font-weight: 200;
+}
+
+@mixin roboto-normal {
+  font-family: $roboto;
+  font-weight: 400;
+}
+
+@mixin roboto-medium {
+  font-family: $roboto;
+  font-weight: 500;
+}
+

@@ -1,0 +1,33 @@
+header {
+  background-color: $white;
+  padding: 30px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+
+nav {
+  @include outer-container;
+}
+
+nav h1 {
+  @include roboto-light;
+  color: $black;
+  display: inline;
+}
+
+nav small {
+  @include roboto-light;
+  color: $light-gray;
+}
+
+nav ul {
+  float: right;
+  li {
+    display: inline;
+    color: $light-gray;
+    @include roboto-light;
+    margin-right: 10px;
+  }
+}

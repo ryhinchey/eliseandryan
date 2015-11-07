@@ -1,0 +1,384 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500);
+@import url(https://fonts.googleapis.com/css?family=Rokkitt:400,700);
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  appearance: none;
+  background-color: #576F77;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto", helvetica-neue, helvetica, sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+  button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+    background-color: #46595f;
+    color: #fff; }
+  button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+    button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
+      background-color: #576F77; }
+
+fieldset {
+  background-color: #e9e9e9;
+  border: 1px solid #a8a8a7;
+  margin: 0 0 0.75em;
+  padding: 1.5em; }
+
+input,
+label,
+select {
+  display: block;
+  font-family: "Roboto", helvetica-neue, helvetica, sans-serif;
+  font-size: 1em; }
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.375em; }
+  label.required::after {
+    content: "*"; }
+  label abbr {
+    display: none; }
+
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
+select[multiple=multiple] {
+  background-color: #fff;
+  border: 1px solid #a8a8a7;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  font-family: "Roboto", helvetica-neue, helvetica, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  transition: border-color 150ms ease;
+  width: 100%; }
+  input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
+  select[multiple=multiple]:hover {
+    border-color: #868686; }
+  input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
+  select[multiple=multiple]:focus {
+    border-color: #576F77;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(76, 97, 104, 0.7);
+    outline: none; }
+  input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
+  select[multiple=multiple]:disabled {
+    background-color: #f2f2f2;
+    cursor: not-allowed; }
+    input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
+    select[multiple=multiple]:disabled:hover {
+      border: 1px solid #a8a8a7; }
+
+textarea {
+  resize: vertical; }
+
+input[type="search"] {
+  appearance: none; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+  input[type="checkbox"] + label,
+  input[type="radio"] + label {
+    display: inline-block; }
+
+input[type="file"] {
+  margin-bottom: 0.75em;
+  width: 100%; }
+
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto; }
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+dl {
+  margin-bottom: 0.75em; }
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  dl dd {
+    margin: 0; }
+
+table {
+  border-collapse: collapse;
+  font-feature-settings: "kern", "liga", "tnum";
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+th {
+  border-bottom: 1px solid #7e7e7d;
+  font-weight: 600;
+  padding: 0.75em 0;
+  text-align: left; }
+
+td {
+  border-bottom: 1px solid #a8a8a7;
+  padding: 0.75em 0; }
+
+tr,
+td,
+th {
+  vertical-align: middle; }
+
+body {
+  color: #333;
+  font-family: "Roboto", helvetica-neue, helvetica, sans-serif;
+  font-feature-settings: "kern", "liga", "pnum";
+  font-size: 1em;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", helvetica-neue, helvetica, sans-serif;
+  line-height: 1.2;
+  margin: 0 0 0.75em; }
+
+p {
+  margin: 0 0 0.75em; }
+
+a {
+  color: white;
+  text-decoration: underline; }
+  a:active, a:focus, a:hover {
+    color: #bfbfbf;
+    text-decoration: underline; }
+
+hr {
+  border-bottom: 1px solid #a8a8a7;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0; }
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+body, html {
+  padding: 0;
+  margin: 0; }
+
+.container {
+  max-width: 93.75em;
+  margin-left: auto;
+  margin-right: auto; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+header {
+  background-color: #fff;
+  padding: 30px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200; }
+
+nav {
+  max-width: 93.75em;
+  margin-left: auto;
+  margin-right: auto; }
+  nav::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+nav h1 {
+  font-family: "Roboto", helvetica-neue, helvetica, sans-serif;
+  font-weight: 200;
+  color: #000;
+  display: inline; }
+
+nav small {
+  font-family: "Roboto", helvetica-neue, helvetica, sans-serif;
+  font-weight: 200;
+  color: #a8a8a7; }
+
+nav ul {
+  float: right; }
+  nav ul li {
+    display: inline;
+    color: #a8a8a7;
+    font-family: "Roboto", helvetica-neue, helvetica, sans-serif;
+    font-weight: 200;
+    margin-right: 10px; }
+
+.hero {
+  background: url("/img/hero-home.jpg");
+  padding-top: 11em;
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block; }
+  .hero::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (min-width: 600px) {
+    .hero {
+      background-position: inherit; } }
+
+.hero h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Rokkitt", serif;
+  font-size: 6em;
+  text-decoration: uppercase;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3); }
+  @media screen and (min-width: 600px) {
+    .hero h1 {
+      font-size: 10em; } }
+
+.story {
+  padding: 5em 0;
+  display: block;
+  background: url("/img/white_wall_hash.png");
+  color: #576F77; }
+  .story::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+h2.top-centered {
+  font-family: "Roboto", helvetica-neue, helvetica, sans-serif;
+  font-weight: 200;
+  text-align: center;
+  font-size: 2.5em; }
+
+.story-carousel {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 65.8807828007%;
+  margin-left: 17.0596085997%;
+  margin-top: 60px; }
+  .story-carousel:last-child {
+    margin-right: 0; }
+
+.story-carousel img {
+  border-radius: 8px; }
+
+.story-text {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 65.8807828007%;
+  margin-left: 17.0596085997%; }
+  .story-text:last-child {
+    margin-right: 0; }
+  .story-text p {
+    font-family: "Roboto", helvetica-neue, helvetica, sans-serif;
+    font-weight: 400; }
+  .story-text span {
+    color: #F0F0F0;
+    font-size: 5em;
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 170px;
+    text-shadow: 3px 1px 0px black;
+    font-weight: 400;
+    font-family: "Rokkitt", serif; }
+
+.cortland-image, .cortland-engagement {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
+  height: 600px;
+  position: relative; }
+  .cortland-image:last-child, .cortland-engagement:last-child {
+    margin-right: 0; }
+
+.cortland-image {
+  background: url("/img/cortland-young.jpg");
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.cortland-engagement {
+  background: url("/img/engagement.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 0; }
+
+.where {
+  color: white;
+  display: block;
+  background-size: contain;
+  background: url("/img/sleepy-hollow-sign.jpeg");
+  background-position: center;
+  padding: 40px 0;
+  text-align: center;
+  text-shadow: 2px 2px black; }
+  .where::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.where h2, h3 {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.where h2 {
+  font-family: "Roboto", helvetica-neue, helvetica, sans-serif;
+  font-weight: 200;
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 400; }
+
+.where h3 {
+  font-weight: 400;
+  font-size: 33px; }
+
+.things-to-do {
+  padding: 40px 0; }
+
+* {
+  margin: 0; }
+
+html, body {
+  height: 100%; }
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em; }
+
+.footer, .push {
+  height: 4em; }
+
+/*# sourceMappingURL=main.css.map */
