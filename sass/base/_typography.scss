@@ -19,6 +19,7 @@ h6 {
 
 p {
   margin: 0 0 $small-spacing;
+  font-size: 20px;
 }
 
 a {
@@ -45,4 +46,11 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
+}
+
+.accomodations a {
+  color: #333;
+  &:hover {
+    color: #bfbfbf;
+  }
 }

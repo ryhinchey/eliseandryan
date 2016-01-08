@@ -9,6 +9,7 @@ header {
 
 nav {
   @include outer-container;
+  padding: 0 30px;
 }
 
 nav h1 {
@@ -29,5 +30,9 @@ nav ul {
     color: $light-gray;
     @include roboto-light;
     margin-right: 10px;
+  }
+  a {
+    color: $black;
+    text-decoration: none;
   }
 }

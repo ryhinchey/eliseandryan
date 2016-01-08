@@ -1,6 +1,6 @@
 .hero {
   background: url('/img/hero-home.jpg');
-  padding-top: 11em;
+  padding-top: 7em;
   height: 1000px;
   background-position: center;  
   background-repeat: no-repeat;
@@ -11,14 +11,14 @@
   }
 }
 
+.fancy-text {
+  color: $white;
+  font-weight: 200;
+}
+
 .hero h1 {
   text-align: center;
-  color: $white;
-  @include rokkit-normal;
   font-size: 6em;
-  @include media($medium-screen-up) {
-    font-size: em(160);
-  }
   text-decoration: uppercase;
   text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
 }
@@ -36,15 +36,6 @@ h2.top-centered {
   font-size: 2.5em;
 }
 
-.story-carousel {
-  @include span-columns(8);
-  @include shift(2);
-  margin-top: 60px;
-}
-
-.story-carousel img {
-  border-radius: 8px;
-}
 
 .story-text {
   @include span-columns(8);
@@ -95,6 +86,11 @@ h2.top-centered {
   text-shadow: 2px 2px black;
 }
 
+.where iframe {
+  @include span-columns(6);
+  @include shift(3);
+}
+
 .where h2, h3 {
   width: 60%;
   margin-left: auto;
@@ -114,5 +110,96 @@ h2.top-centered {
 }
 
 .things-to-do {
+  @include row;
   padding: 40px 0;
 }
+
+.us-background {
+  background: url('/img/6.jpg');
+  background-repeat: no-repeat;
+  height: 750px;
+  background-size: cover;
+}
+
+.us-background .container {
+  padding: 80px 0;
+  position: relative;
+}
+
+.us-background h2 {
+  font-size: 5em;
+  text-align: center;
+}
+
+
+.accomodations .container {
+  padding: 60px 0; 
+}
+
+.accomodations p {
+  @include span-columns(8);
+  @include shift(2);
+  @include roboto-normal;
+}
+
+.image-holder {
+  @include span-columns(4);
+  background-color: black;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.image-grid .image-holder {
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+
+.one {
+  background: url('/img/1.jpg');
+}
+
+.two {
+  background: url('/img/3.jpg');
+}
+
+.three {
+  background: url('/img/4.jpg');
+}
+
+.four {
+  background: url('/img/central-park.jpg');
+}
+
+.five {
+  background: url('/img/china.jpg');
+}
+
+.six {
+  background: url('/img/marathon.jpg');
+}
+
+.seven {
+  background: url('/img/party.jpg');
+}
+
+.eight {
+  background: url('/img/hiking.jpg');
+}
+
+.nine {
+  background: url('/img/bills.jpeg');
+}
+
+.image-holder {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.six, .nine {
+  background-position: inherit;
+}
+
