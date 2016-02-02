@@ -183,9 +183,9 @@ picture {
   margin: 0;
   max-width: 100%; }
 
-.accomodations a {
+.accomodations a, #things-to-do a {
   color: #333; }
-  .accomodations a:hover {
+  .accomodations a:hover, #things-to-do a:hover {
     color: #bfbfbf; }
 
 body, html {
@@ -242,12 +242,9 @@ nav ul {
     color: #000;
     text-decoration: none; }
 
-footer ul {
+footer {
+  padding: 30px 0;
   text-align: center; }
-
-footer li {
-  display: inline;
-  margin-right: 10px; }
 
 .hero {
   background: url("/img/hero-home.jpg");
@@ -328,43 +325,22 @@ h2.top-centered {
         bottom: 20px;
         left: 170px; } }
 
-.cortland-image, .cortland-engagement {
+.time-photo {
   float: left;
   display: block;
   margin-right: 7.4229703521%;
   width: 100%;
-  position: relative; }
-  .cortland-image:last-child, .cortland-engagement:last-child {
+  margin-bottom: 10px; }
+  .time-photo:last-child {
     margin-right: 0; }
   @media screen and (min-width: 900px) {
-    .cortland-image, .cortland-engagement {
+    .time-photo {
       float: left;
       display: block;
       margin-right: 2.3576515979%;
       width: 48.821174201%; }
-      .cortland-image:last-child, .cortland-engagement:last-child {
+      .time-photo:last-child {
         margin-right: 0; } }
-
-.cortland-image {
-  height: 600px;
-  background: url("/img/cortland-young.jpg");
-  background-repeat: no-repeat;
-  background-size: contain; }
-
-.cortland-engagement {
-  background: url("/img/engagement.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 420px;
-  margin-right: 0; }
-  .cortland-engagement span {
-    bottom: 10px !important; }
-  @media screen and (min-width: 900px) {
-    .cortland-engagement span {
-      bottom: 50px; } }
-  @media screen and (min-width: 900px) {
-    .cortland-engagement {
-      height: 600px; } }
 
 .where {
   color: white;
@@ -512,6 +488,19 @@ h2.top-centered {
 
 .six, .nine {
   background-position: inherit; }
+
+#things-to-do {
+  margin-bottom: 50px; }
+
+#things-to-do ul {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 65.8807828007%;
+  margin-left: 17.0596085997%;
+  list-style-type: circle; }
+  #things-to-do ul:last-child {
+    margin-right: 0; }
 
 * {
   margin: 0; }
