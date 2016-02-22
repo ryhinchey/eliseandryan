@@ -183,9 +183,9 @@ picture {
   margin: 0;
   max-width: 100%; }
 
-.accomodations a, #things-to-do a {
+.accomodations a, #things-to-do a, #registry a {
   color: #333; }
-  .accomodations a:hover, #things-to-do a:hover {
+  .accomodations a:hover, #things-to-do a:hover, #registry a:hover {
     color: #bfbfbf; }
 
 body, html {
@@ -237,7 +237,9 @@ nav ul {
     color: #a8a8a7;
     font-family: "Roboto", helvetica-neue, helvetica, sans-serif;
     font-weight: 200;
-    margin-right: 10px; }
+    margin-right: 10px;
+    border-right: 1px solid #a8a8a7;
+    padding: 0 5px; }
   nav ul a {
     color: #000;
     text-decoration: none; }
@@ -501,6 +503,9 @@ h2.top-centered {
   list-style-type: circle; }
   #things-to-do ul:last-child {
     margin-right: 0; }
+
+#registry p {
+  text-align: center; }
 
 * {
   margin: 0; }
